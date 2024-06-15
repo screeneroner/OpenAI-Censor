@@ -80,6 +80,8 @@ Mike
 > Best,
 > __Joe__
 
+![Original message](https://github.com/screeneroner/OpenAI-Censor/blob/main/UnHidden.png)
+
 ### Encrypted message
 > Hi __John__,
 > 
@@ -87,3 +89,5 @@ Mike
 > 
 > Best,
 > __Mike__
+
+![Encrypted message](https://github.com/screeneroner/OpenAI-Censor/blob/main/Hidden.png)
