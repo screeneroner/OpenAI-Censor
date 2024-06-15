@@ -46,6 +46,8 @@ Berkshire Hathaway
 Finance Parnter
 Warren Buffett
 Financier
+Joe
+Mike
 ```
 
 ### Original message
@@ -62,4 +64,4 @@ Financier
 > I wanted to share an exciting opportunity for __««Client Company»»__ to partner with __««Finance Parnter»»__. Given __««Financier»»'s__ reputation for strategic investments and __««Client Company»»'s__ innovative technology, this collaboration with __««Financier»»__ could be groundbreaking. Let's explore how __««Client Company»»__ and __««Finance Parnter»»__ can create a powerful synergy.
 > 
 > Best,
-> __Joe__
+> __Mike__
