@@ -12,7 +12,7 @@ you must use the exact text in the AI prompts.
 
 ## Hide it to keep it
 
-The solution for this dichotomy is straightforward—just replace real words with their 'anonymized' 
+The solution for this dichotomy is straightforward - just replace real words with their 'anonymized' 
 analogs! Instead of calling your client by its real name 'Super Secret IT Company LTD.', use 
 'Client Company Name' in the prompt. There are two main problems with this approach. The first is 
 that there may be many places in your text where you need to make these changes. It can take a lot 
