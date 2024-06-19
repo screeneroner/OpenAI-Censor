@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OpenAI Censor
 // @namespace    http://tampermonkey.net/
-// @version      2024-06-15
+// @version      2024-06-19
 // @description  Encode/decode words from the given file on the ChatGPT page to hide sensitive info.
 // @author       Screeneroner
 // @license      GPL v3
@@ -93,6 +93,10 @@ load the proper encoding file and press the Unhide button!
 10. Profit!
 
 ——————————————————————————————————————————————————————————————————————————————————————————————————*/
+
+// VERSION CHANGES
+// 2024-06-15 Initial release
+// 2024-06-19 Fixed bug when encoding data was not cleared on re-reading (changed) encoding file.
 
 (function() {
     'use strict';
@@ -191,10 +195,13 @@ const addContainer = () => {
             reader.onload = e => {
                 try {
                     const lines = e.target.result.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+                    Object.keys(placeholders).forEach(key => delete placeholders[key]); // Clear existing placeholders
                     for (let i = 0; i < lines.length; i++) {
                         placeholders[i] = lines[i];
                     }
-                } catch (err) { alert('Error reading or parsing file.'); }
+                } catch (err) {
+                    alert('Error reading or parsing file.');
+                }
             };
             reader.readAsText(file);
         }
